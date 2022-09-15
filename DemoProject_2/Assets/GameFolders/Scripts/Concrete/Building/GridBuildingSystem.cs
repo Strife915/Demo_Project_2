@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using DemoProject2.Enums;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.Tilemaps;
 
 namespace DemoProject2.Building

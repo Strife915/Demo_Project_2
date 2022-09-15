@@ -53,19 +53,23 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 4c8bee4326590b34288c3ff3029f5543, type: 3}
   - {fileID: 21300000, guid: 83425e5392875174bbe2a32381bc0f39, type: 3}
   - {fileID: 21300000, guid: 23c5bba962887044295947ecd0d30c1d, type: 3}
+  - {fileID: 21300000, guid: 2ce4804b6b6e77c4092a15cdac097638, type: 3}
   - {fileID: 21300000, guid: 4220017bd1eb5944a83fe3ac303f3e6e, type: 3}
-  - {fileID: 21300000, guid: aabd6d8b9e48c4d4ab97a026c9c39e2e, type: 3}
+  - {fileID: 21300000, guid: 7918bcac76745d640902714b51bb03cd, type: 3}
   - {fileID: 21300000, guid: a179bc9d134cc2e4bbb104197ab34ef1, type: 3}
   - {fileID: 21300000, guid: 80acb71edf845814682eddd71f42967e, type: 3}
+  - {fileID: 21300000, guid: ccdf67fe9360b584397ea8806b6898c5, type: 3}
   m_PackedSpriteNamesToIndex:
   - Square
   - SmallMansion_01
   - Barn_01
   - TileGrass
+  - WindMill_02
   - SmallHouse_02
-  - WindMill_01
+  - tile sprite
   - Mansion_01
   - SmallHouse_01
+  - Guardhouse_03
   m_RenderDataMap: {}
   m_Tag: Atlas
   m_IsVariant: 0
