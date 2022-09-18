@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using DemoProject2.Abstract.Patterns;
+using DemoProject2.Controllers;
 using DemoProject2.Enums;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -11,12 +12,13 @@ namespace DemoProject2.Building
         [SerializeField] GridLayout _gridLayout;
         [SerializeField] Tilemap _mainTilemap;
         [SerializeField] Tilemap _tempTilemap;
-        
-        public GridLayout GridLayOut => _gridLayout;
-        Dictionary<TileType, TileBase> tileBases = new Dictionary<TileType, TileBase>();
+        [SerializeField] PlayerController _player;
 
+        Dictionary<TileType, TileBase> tileBases = new Dictionary<TileType, TileBase>();
         Building _temp;
         BoundsInt _prevArea;
+
+        public GridLayout GridLayOut => _gridLayout;
 
 
         void Awake()
@@ -45,12 +47,14 @@ namespace DemoProject2.Building
                 if (_temp.CanBePlaced())
                 {
                     _temp.Place();
+                    _player.StateMachine.ChangeState(_player.PlayerIdleState);
                 }
             }
             else if (Input.GetKeyDown(KeyCode.Escape))
             {
                 ClearArea();
                 Destroy(_temp.gameObject);
+                _player.StateMachine.ChangeState(_player.PlayerIdleState);
             }
         }
 
@@ -93,6 +97,7 @@ namespace DemoProject2.Building
             Vector3 position = _gridLayout.CellToLocalInterpolated(new Vector3(.5f, .5f, 0f));
             _temp = Instantiate(building, position, Quaternion.identity).GetComponent<Building>();
             FollowBuilding();
+            _player.StateMachine.ChangeState(_player.PlayerBuildState);
         }
 
         void ClearArea()

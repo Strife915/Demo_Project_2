@@ -1,6 +1,6 @@
-using System;
-using DemoProject2.Inputs;
+using DemoProject2.Abstract.Input;
 using DemoProject2.StateMachines;
+using DemoProject2.Uis;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -9,19 +9,22 @@ namespace DemoProject2.Controllers
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] Tilemap _mainTileMap;
+        [SerializeField] InfiniteScrollOpenCloseUpdate _infiniteScrollOpenCloseUpdate;
+        [SerializeField] LayerMask _layerMask;
+        public ICursorController CursorController { get; private set; }
         public StateMachine StateMachine { get; private set; }
         public PlayerIdleState PlayerIdleState { get; private set; }
         public PlayerBuildState PlayerBuildState { get; private set; }
         public PlayerCommandState PlayerCommandState { get; private set; }
-        public InputReader Input { get; private set; }
+        public LayerMask LayerMask => _layerMask;
 
         void Awake()
         {
             StateMachine = new StateMachine();
-            PlayerIdleState = new PlayerIdleState(StateMachine);
-            PlayerBuildState = new PlayerBuildState(StateMachine, _mainTileMap);
+            CursorController = new CursorController(this);
+            PlayerIdleState = new PlayerIdleState(StateMachine, this);
+            PlayerBuildState = new PlayerBuildState(StateMachine, _mainTileMap, _infiniteScrollOpenCloseUpdate);
             PlayerCommandState = new PlayerCommandState(StateMachine);
-            Input = new InputReader();
         }
 
         void Start()
@@ -31,7 +34,11 @@ namespace DemoProject2.Controllers
 
         void Update()
         {
-            //Input.ReadPositionFromLeftClick();
+            StateMachine.CurrentState.Tick();
+        }
+
+        void FixedUpdate()
+        {
         }
     }
 }

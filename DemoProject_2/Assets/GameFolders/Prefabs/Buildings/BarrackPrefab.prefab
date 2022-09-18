@@ -11,6 +11,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarrackPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 979818804115224037, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978582075557927799, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2825122300665020396, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
       propertyPath: m_Size.x
       value: 2.6407585

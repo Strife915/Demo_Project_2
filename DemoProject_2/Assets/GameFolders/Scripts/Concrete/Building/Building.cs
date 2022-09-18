@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace DemoProject2.Building

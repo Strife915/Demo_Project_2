@@ -19,5 +19,9 @@ namespace DemoProject2.StateMachines
         public virtual void DoChecks()
         {
         }
+
+        public virtual void FixedTick()
+        {
+        }
     }
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 114483401197229046}
   - component: {fileID: 114500005028945546}
   - component: {fileID: 114948524785464904}
+  - component: {fileID: 2178176378621362726}
   m_Layer: 5
   m_Name: VerticalScroll
   m_TagString: Untagged
@@ -134,6 +135,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollContent: {fileID: 114655391037842748}
   outOfBoundsThreshold: 40
+--- !u!114 &2178176378621362726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372980295482016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6a78fb17ef6d64cafd071ae561ab2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1801227610157082
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,6 +802,26 @@ PrefabInstance:
     - target: {fileID: 4791254048401257156, guid: 30726753ae8d9c642bb84896b34c0fee, type: 3}
       propertyPath: m_Name
       value: Barracks-PowerPlant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663821482608567042, guid: 30726753ae8d9c642bb84896b34c0fee, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663821482608567042, guid: 30726753ae8d9c642bb84896b34c0fee, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InitializeWithBuilding
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663821482608567042, guid: 30726753ae8d9c642bb84896b34c0fee, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DemoProject2.Building.GridBuildingSystem, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663821482608567042, guid: 30726753ae8d9c642bb84896b34c0fee, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8206537595609756554, guid: 9c98ac2a20dff354193a467ba06fc6b2, type: 3}
+    - target: {fileID: 8663821482608567042, guid: 30726753ae8d9c642bb84896b34c0fee, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30726753ae8d9c642bb84896b34c0fee, type: 3}
