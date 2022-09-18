@@ -1,103 +1,80 @@
+using System;
 using UnityEngine;
 
 namespace DemoProject2.Building
 {
-public class Building : MonoBehaviour
-{
-    //if the building is placed or not
-    public  bool Placed { get; private set; }
-    //area under the house - stores position and building size
-    public BoundsInt area;
-
-    #region Movement
-    //initial position of the click
-    private Vector3 startPos;
-    //offset from the click position to the center 
-    private float deltaX, deltaY;
-    
-    private void OnMouseDown()
+    public class Building : MonoBehaviour
     {
-        //only respond if the building is not placed
-        if (!Placed)
+        public bool Placed { get; private set; }
+        public BoundsInt area;
+
+
+        Vector3 _startPos;
+        float _deltaX, _deltaY;
+        Camera _camera;
+
+        void Awake()
         {
-            //save the position
-            startPos = Input.mousePosition;
-            //convert it to world point
-            startPos = Camera.main.ScreenToWorldPoint(startPos);
-        
-            //calculate the offset
-            deltaX = startPos.x - transform.position.x;
-            deltaY = startPos.y - transform.position.y;
-        }
-    }
-
-    private void OnMouseDrag()
-    {
-        //only respond if the building is not placed
-        if (!Placed)
-        {
-            //current mouse position in world space
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            //set the position of the house; we need to subtract the deltas to make the movement smooth
-            transform.position = new Vector3(mousePos.x - deltaX, mousePos.y - deltaY, 0);
-            //highlight the new area
-            GridBuildingSystem.Instance.FollowBuilding();
-        }
-    }
-
-    private void OnMouseUp()
-    {
-        //only respond if the building is not placed
-        if (!Placed)
-        {
-            //convert current building position to tile position
-            Vector3Int cellPosition = GridBuildingSystem.Instance.gridLayout.LocalToCell(transform.position);
-            //snap the house to grid
-            transform.localPosition = GridBuildingSystem.Instance.gridLayout.
-                CellToLocalInterpolated(cellPosition + new Vector3(.5f, .5f, 0f));
-        }
-    }
-
-    #endregion
-    
-    #region Build Methods
-
-    /*
-     * Check if the building can be placed at its current position
-     */
-    public bool CanBePlaced()
-    {
-        //create an area under the building
-        Vector3Int positionInt = GridBuildingSystem.Instance.gridLayout.LocalToCell(transform.position);
-        BoundsInt areaTemp = area;
-        areaTemp.position = positionInt;
-
-        //call the GridBuildingSystem to check the area
-        if (GridBuildingSystem.Instance.CanTakeArea(areaTemp))
-        {
-            return true;
+            _camera = Camera.main;
         }
 
-        return false;
-    }
+        void OnMouseDown()
+        {
+            if (!Placed)
+            {
+                _startPos = Input.mousePosition;
+                _startPos = _camera.ScreenToWorldPoint(_startPos);
 
-    /*
-     * Make the building placed
-     */
-    public void Place()
-    {
-        //create an area under the building
-        Vector3Int positionInt = GridBuildingSystem.Instance.gridLayout.LocalToCell(transform.position);
-        BoundsInt areaTemp = area;
-        areaTemp.position = positionInt;
-        
-        Placed = true;
-        
-        //call the GridBuildingSystem to take the area
-        GridBuildingSystem.Instance.TakeArea(areaTemp);
+                _deltaX = _startPos.x - transform.position.x;
+                _deltaY = _startPos.y - transform.position.y;
+            }
+        }
+
+        void OnMouseDrag()
+        {
+            if (!Placed)
+            {
+                Vector3 mousePos = _camera.ScreenToWorldPoint(Input.mousePosition);
+                transform.position = new Vector3(mousePos.x - _deltaX, mousePos.y - _deltaY, 0);
+                GridBuildingSystem.Instance.FollowBuilding();
+            }
+        }
+
+        void OnMouseUp()
+        {
+            if (!Placed)
+            {
+                Vector3Int cellPosition = GridBuildingSystem.Instance.GridLayOut.LocalToCell(transform.position);
+                transform.localPosition =
+                    GridBuildingSystem.Instance.GridLayOut.CellToLocalInterpolated(cellPosition +
+                        new Vector3(.5f, .5f, 0f));
+            }
+        }
+
+
+        public bool CanBePlaced()
+        {
+            Vector3Int positionInt = GridBuildingSystem.Instance.GridLayOut.LocalToCell(transform.position);
+            BoundsInt areaTemp = area;
+            areaTemp.position = positionInt;
+
+            if (GridBuildingSystem.Instance.CanTakeArea(areaTemp))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public void Place()
+        {
+            Vector3Int positionInt = GridBuildingSystem.Instance.GridLayOut.LocalToCell(transform.position);
+            BoundsInt areaTemp = area;
+            areaTemp.position = positionInt;
+
+            Placed = true;
+
+            GridBuildingSystem.Instance.TakeArea(areaTemp);
+        }
     }
-    
-    #endregion
-}
-    
 }
