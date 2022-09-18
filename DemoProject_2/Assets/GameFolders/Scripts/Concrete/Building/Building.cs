@@ -1,16 +1,20 @@
+using DemoProject2.Abstract.Controlable;
 using UnityEngine;
 
 namespace DemoProject2.Building
 {
-    public class Building : MonoBehaviour
+    public class Building : MonoBehaviour, IClickable
     {
-        public bool Placed { get; private set; }
-        public BoundsInt area;
-
-
+        [SerializeField] SpriteRenderer _spriteRenderer;
+        [SerializeField] Transform _initialSpawnPos;
         Vector3 _startPos;
         float _deltaX, _deltaY;
         Camera _camera;
+
+        public bool Placed { get; private set; }
+        public SpriteRenderer _selecSprite => _spriteRenderer;
+        public BoundsInt area;
+
 
         void Awake()
         {
@@ -74,6 +78,24 @@ namespace DemoProject2.Building
             Placed = true;
 
             GridBuildingSystem.Instance.TakeArea(areaTemp);
+        }
+
+
+        public void OnClick()
+        {
+            Debug.Log("clicked");
+            _selecSprite.enabled = true;
+        }
+
+        public void OnCommand()
+        {
+            Debug.Log("got command");
+        }
+
+        public void OnRealse()
+        {
+            _selecSprite.enabled = false;
+            Debug.Log("realesed");
         }
     }
 }

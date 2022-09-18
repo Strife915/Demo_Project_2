@@ -12,6 +12,7 @@ namespace DemoProject2.StateMachines
 
         public void ChangeState(State newState)
         {
+            if (newState == CurrentState) return;
             CurrentState.Exit();
             CurrentState = newState;
             CurrentState.Enter();

@@ -41,6 +41,9 @@ TagManager:
   - name: Ground
     uniqueID: 2989471581
     locked: 0
+  - name: SelectSprite
+    uniqueID: 3013888305
+    locked: 0
   - name: Building
     uniqueID: 3076321023
     locked: 0

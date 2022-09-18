@@ -7,6 +7,7 @@ namespace DemoProject2.Inputs
     {
         readonly MouseClicks _clicks;
         public bool LeftClick => _clicks.PlayerMouse.LeftClick.WasPerformedThisFrame();
+        public bool RightClick => _clicks.PlayerMouse.RightClick.WasPerformedThisFrame();
         public Vector2 ClickPos { get; private set; }
 
         public NewInputReader()

@@ -24,7 +24,7 @@ namespace DemoProject2.Controllers
             CursorController = new CursorController(this);
             PlayerIdleState = new PlayerIdleState(StateMachine, this);
             PlayerBuildState = new PlayerBuildState(StateMachine, _mainTileMap, _infiniteScrollOpenCloseUpdate);
-            PlayerCommandState = new PlayerCommandState(StateMachine);
+            PlayerCommandState = new PlayerCommandState(StateMachine, this);
         }
 
         void Start()
