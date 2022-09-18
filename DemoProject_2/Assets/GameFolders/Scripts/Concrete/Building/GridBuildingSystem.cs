@@ -1,14 +1,13 @@
 using System.Collections.Generic;
+using DemoProject2.Abstract.Patterns;
 using DemoProject2.Enums;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 namespace DemoProject2.Building
 {
-public class GridBuildingSystem : MonoBehaviour
+public class GridBuildingSystem : SingletonMonoObject<GridBuildingSystem>
 {
-    //singletone pattern
-    public static GridBuildingSystem current;
     
     public GridLayout gridLayout; //Grid Object
     public Tilemap MainTilemap; //Main tilemap - for checking placement availability
@@ -25,25 +24,22 @@ public class GridBuildingSystem : MonoBehaviour
 
     private void Awake()
     {
-        current = this;
+        SetSingletonValue(this);
     }
 
     private void Start()
     {
-        //todo you can change the initialization method if you want to
-        string tilePath = @"Tiles\";
+        string tilePath = "Tiles/";
         tileBases.Add(TileType.Empty, null);
-        tileBases.Add(TileType.White, Resources.Load<TileBase>(tilePath + "white"));
-        tileBases.Add(TileType.Green, Resources.Load<TileBase>(tilePath + "green"));
-        tileBases.Add(TileType.Red, Resources.Load<TileBase>(tilePath + "red"));
+        tileBases.Add(TileType.White, Resources.Load<TileBase>(tilePath + "White"));
+        tileBases.Add(TileType.Red, Resources.Load<TileBase>(tilePath + "Red"));
+        tileBases.Add(TileType.Green, Resources.Load<TileBase>(tilePath + "Green"));
     }
 
     private void Update()
     {
-        //we don't have a building currently being placed
         if (!temp)
         {
-            //nothing to do
             return;
         }
         

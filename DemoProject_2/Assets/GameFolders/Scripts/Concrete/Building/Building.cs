@@ -41,7 +41,7 @@ public class Building : MonoBehaviour
             //set the position of the house; we need to subtract the deltas to make the movement smooth
             transform.position = new Vector3(mousePos.x - deltaX, mousePos.y - deltaY, 0);
             //highlight the new area
-            GridBuildingSystem.current.FollowBuilding();
+            GridBuildingSystem.Instance.FollowBuilding();
         }
     }
 
@@ -51,9 +51,9 @@ public class Building : MonoBehaviour
         if (!Placed)
         {
             //convert current building position to tile position
-            Vector3Int cellPosition = GridBuildingSystem.current.gridLayout.LocalToCell(transform.position);
+            Vector3Int cellPosition = GridBuildingSystem.Instance.gridLayout.LocalToCell(transform.position);
             //snap the house to grid
-            transform.localPosition = GridBuildingSystem.current.gridLayout.
+            transform.localPosition = GridBuildingSystem.Instance.gridLayout.
                 CellToLocalInterpolated(cellPosition + new Vector3(.5f, .5f, 0f));
         }
     }
@@ -68,12 +68,12 @@ public class Building : MonoBehaviour
     public bool CanBePlaced()
     {
         //create an area under the building
-        Vector3Int positionInt = GridBuildingSystem.current.gridLayout.LocalToCell(transform.position);
+        Vector3Int positionInt = GridBuildingSystem.Instance.gridLayout.LocalToCell(transform.position);
         BoundsInt areaTemp = area;
         areaTemp.position = positionInt;
 
         //call the GridBuildingSystem to check the area
-        if (GridBuildingSystem.current.CanTakeArea(areaTemp))
+        if (GridBuildingSystem.Instance.CanTakeArea(areaTemp))
         {
             return true;
         }
@@ -87,14 +87,14 @@ public class Building : MonoBehaviour
     public void Place()
     {
         //create an area under the building
-        Vector3Int positionInt = GridBuildingSystem.current.gridLayout.LocalToCell(transform.position);
+        Vector3Int positionInt = GridBuildingSystem.Instance.gridLayout.LocalToCell(transform.position);
         BoundsInt areaTemp = area;
         areaTemp.position = positionInt;
         
         Placed = true;
         
         //call the GridBuildingSystem to take the area
-        GridBuildingSystem.current.TakeArea(areaTemp);
+        GridBuildingSystem.Instance.TakeArea(areaTemp);
     }
     
     #endregion

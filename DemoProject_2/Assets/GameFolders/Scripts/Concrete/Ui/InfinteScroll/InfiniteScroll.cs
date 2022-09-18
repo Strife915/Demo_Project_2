@@ -49,7 +49,6 @@ public class InfiniteScroll : MonoBehaviour, IBeginDragHandler, IDragHandler, IS
     /// <param name="eventData">The data related to the drag event.</param>
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("1");
         lastDragPosition = eventData.position;
     }
 
@@ -59,7 +58,6 @@ public class InfiniteScroll : MonoBehaviour, IBeginDragHandler, IDragHandler, IS
     /// <param name="eventData">The data related to the drag event.</param>
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("2");
         if (scrollContent.Vertical)
         {
             positiveDrag = eventData.position.y > lastDragPosition.y;
@@ -78,7 +76,6 @@ public class InfiniteScroll : MonoBehaviour, IBeginDragHandler, IDragHandler, IS
     /// <param name="eventData">The data related to the scroll event.</param>
     public void OnScroll(PointerEventData eventData)
     {
-        Debug.Log("3");
         if (scrollContent.Vertical)
         {
             positiveDrag = eventData.scrollDelta.y > 0;
