@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7643365016738357810}
   - component: {fileID: 8200731738692204533}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SelectedSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7745609354061661870}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SoldierOwnMoveTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 5093143633648674508}
   - component: {fileID: 2523251256529645295}
   - component: {fileID: 2108766075623628656}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Soldier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8374271475675319643}
   - component: {fileID: 8037899792567727383}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SoldierBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}

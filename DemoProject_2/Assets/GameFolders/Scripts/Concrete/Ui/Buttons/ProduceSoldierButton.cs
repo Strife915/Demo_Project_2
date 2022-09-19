@@ -20,9 +20,9 @@ namespace DemoProject2.Uis
 
         void Produce()
         {
-            Debug.Log("clicked");
             SoldierController soldier =
                 Instantiate(_productionPrefab, _initialSpawnPos).GetComponent<SoldierController>();
+            soldier.transform.parent = null;
             soldier._mover.SetTarget(_initialMovePos);
         }
 

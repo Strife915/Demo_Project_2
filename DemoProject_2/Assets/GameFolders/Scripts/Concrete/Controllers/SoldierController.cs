@@ -1,4 +1,3 @@
-using System;
 using DemoProject2.Abstract.Controlable;
 using DemoProject2.Abstract.Mover;
 using DemoProject2.ScriptableObjects;
@@ -20,7 +19,7 @@ namespace DemoProject2.Controllers
         public StateMachine SoldierStateMachine { get; private set; }
         public SoldierIdleState SoldierIdleState { get; private set; }
         public SoldierMoveState SoldierMoveState { get; private set; }
-        public SpriteRenderer _selecSprite { get; }
+        public SpriteRenderer _selecSprite => _sprite;
 
         void Awake()
         {
@@ -44,11 +43,14 @@ namespace DemoProject2.Controllers
         public void OnClick()
         {
             UpdateSelectFeedBack(true);
+            Debug.Log("click");
         }
 
         public void OnCommand()
         {
-            _target.position = _camera.WorldToScreenPoint(Input.mousePosition);
+            _target.position = _camera.ScreenToWorldPoint(Input.mousePosition);
+            _target.transform.parent = null;
+            _mover.SetTarget(_target);
         }
 
         public void OnRealse()
