@@ -10,7 +10,7 @@ namespace DemoProject2.Controllers
 {
     public class SoldierController : MonoBehaviour, IClickable
     {
-        [SerializeField] SoldierStatsDataContainerSo _stats;
+        [SerializeField] SoldierDataContainerSO _stats;
         [SerializeField] Transform _target;
         [SerializeField] SpriteRenderer _sprite;
 
@@ -34,6 +34,11 @@ namespace DemoProject2.Controllers
         void Start()
         {
             SoldierStateMachine.InıtializeState(SoldierIdleState);
+        }
+
+        void Update()
+        {
+            SoldierStateMachine.CurrentState.Tick();
         }
 
         public void OnClick()
