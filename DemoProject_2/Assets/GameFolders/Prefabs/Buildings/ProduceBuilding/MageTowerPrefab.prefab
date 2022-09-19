@@ -11,6 +11,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MageTowerPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 2825122300665020396, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
+      propertyPath: m_Size.y
+      value: 2.078365
+      objectReference: {fileID: 0}
+    - target: {fileID: 2825122300665020396, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.6117569
+      objectReference: {fileID: 0}
     - target: {fileID: 4045430983433414683, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
       propertyPath: m_Size.x
       value: 3.14
@@ -35,6 +43,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.7908
       objectReference: {fileID: 0}
+    - target: {fileID: 6622175027839175357, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e349b9b07bb234e42b45fae4a416a4e2, type: 3}
+    - target: {fileID: 7762417117022911831, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
+      propertyPath: _productionPrefab
+      value: 
+      objectReference: {fileID: 659241060886418314, guid: 8d631fdae8b34944096d84c9b6cbcd43, type: 3}
+    - target: {fileID: 8681147777639923048, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
+      propertyPath: _buildingData
+      value: 
+      objectReference: {fileID: 11400000, guid: f95882353befd814ab6360edb4aef355, type: 2}
     - target: {fileID: 8681147777639923048, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
       propertyPath: area.m_Size.x
       value: 3

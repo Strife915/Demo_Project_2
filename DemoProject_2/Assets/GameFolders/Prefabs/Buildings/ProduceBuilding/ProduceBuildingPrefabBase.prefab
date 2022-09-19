@@ -656,7 +656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6e16c0d992249fe81863d5841a19992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _productionPrefab: {fileID: 763626753642035384, guid: a1cb526c5bd2c314a9a99125dbe743b2, type: 3}
+  _productionPrefab: {fileID: 0}
   _button: {fileID: 1631768463977487149}
   _initialSpawnPos: {fileID: 279487126226406391}
   _initialMovePos: {fileID: 9120624256054657191}

@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 288d3dffc37815b4ebc9e6cd6b0c9c62, type: 3}
-  m_Name: Soldier_A
+  m_Name: Soldier_C
   m_EditorClassIdentifier: 
-  _moveSpeed: 2
+  _moveSpeed: 3

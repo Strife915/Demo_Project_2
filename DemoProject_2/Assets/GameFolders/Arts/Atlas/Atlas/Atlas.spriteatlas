@@ -51,9 +51,16 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 21300000, guid: 47a50500a805e9b41a97cd653ea41d5e, type: 3}
   - {fileID: 21300000, guid: 9cf5cc60b1feab740af0c42ba121feca, type: 3}
+  - {fileID: 21300000, guid: e349b9b07bb234e42b45fae4a416a4e2, type: 3}
+  - {fileID: 21300000, guid: 36a28dc0fc2adb14c8b7f13c1a851f55, type: 3}
+  - {fileID: 21300000, guid: 435047a28581beb4f9c5bff9725e5457, type: 3}
   - {fileID: 21300000, guid: 4c8bee4326590b34288c3ff3029f5543, type: 3}
   - {fileID: 21300000, guid: 83425e5392875174bbe2a32381bc0f39, type: 3}
   - {fileID: 21300000, guid: c18f8f242632995419b00d06556f05b1, type: 3}
+  - {fileID: 21300000, guid: 020975943178d524ab5dce1d90b35cde, type: 3}
+  - {fileID: 21300000, guid: fdbf44a5407f6024687064f5f897f028, type: 3}
+  - {fileID: 21300000, guid: e232de46e977edd4cb74fe60b32bfada, type: 3}
+  - {fileID: 21300000, guid: 3da7b857be703c74fbfaa9583ef43321, type: 3}
   - {fileID: 21300000, guid: 12d04ed7aeefda149b3f9d479fd13fb6, type: 3}
   - {fileID: 21300000, guid: 23c5bba962887044295947ecd0d30c1d, type: 3}
   - {fileID: 21300000, guid: 2ce4804b6b6e77c4092a15cdac097638, type: 3}
@@ -62,13 +69,21 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a179bc9d134cc2e4bbb104197ab34ef1, type: 3}
   - {fileID: 21300000, guid: 60c46dcdc29a3f14497f308ce69b68f9, type: 3}
   - {fileID: 21300000, guid: 80acb71edf845814682eddd71f42967e, type: 3}
+  - {fileID: 21300000, guid: b2653dde4c1721a4094fe8b934da93b8, type: 3}
   - {fileID: 21300000, guid: ccdf67fe9360b584397ea8806b6898c5, type: 3}
   m_PackedSpriteNamesToIndex:
   - Square
   - Chara_1_3
+  - Chara_5_1
+  - Chara_6_4
+  - Chara_5_4
   - SmallMansion_01
   - Barn_01
   - Chara_1_4
+  - Chara_6_1
+  - Chara_5_2
+  - Chara_6_3
+  - Chara_6_2
   - Chara_1_2
   - TileGrass
   - WindMill_02
@@ -77,6 +92,7 @@ SpriteAtlas:
   - Mansion_01
   - Chara_1_1
   - SmallHouse_01
+  - Chara_5_3
   - Guardhouse_03
   m_RenderDataMap: {}
   m_Tag: Atlas

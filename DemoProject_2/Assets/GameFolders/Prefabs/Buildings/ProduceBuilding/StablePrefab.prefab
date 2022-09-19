@@ -51,6 +51,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.0807
       objectReference: {fileID: 0}
+    - target: {fileID: 6622175027839175357, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 020975943178d524ab5dce1d90b35cde, type: 3}
+    - target: {fileID: 7762417117022911831, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
+      propertyPath: _productionPrefab
+      value: 
+      objectReference: {fileID: 879954675004713547, guid: 20d42fd36e67f4a46b1374061970066b, type: 3}
+    - target: {fileID: 8681147777639923048, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
+      propertyPath: _buildingData
+      value: 
+      objectReference: {fileID: 11400000, guid: a5b9555e30e13814e94837b4621c9d51, type: 2}
     - target: {fileID: 8681147777639923048, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
       propertyPath: area.m_Size.x
       value: 5

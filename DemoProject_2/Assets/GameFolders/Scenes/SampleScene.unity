@@ -57051,6 +57051,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4282965065462778778, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4282965065462778778, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 144217007}
+    - target: {fileID: 4282965065462778778, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InitializeWithBuilding
+      objectReference: {fileID: 0}
+    - target: {fileID: 4282965065462778778, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DemoProject2.Buildings.GridBuildingSystem, DemoProject2.Scripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 4282965065462778778, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 5506028152586300036, guid: 6a2004615d08253439fc790f8c42af84, type: 3}
+    - target: {fileID: 4282965065462778778, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6683270804973528806, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -57100,6 +57124,30 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8142923535274974908, guid: c25248cfab614344092b544d5ec6725a, type: 3}
     - target: {fileID: 8738640541996888113, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899998041157629076, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899998041157629076, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 144217007}
+    - target: {fileID: 8899998041157629076, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InitializeWithBuilding
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899998041157629076, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DemoProject2.Buildings.GridBuildingSystem, DemoProject2.Scripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 8899998041157629076, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 576363938554772475, guid: 38152808002c8a3479e96629b80e54d1, type: 3}
+    - target: {fileID: 8899998041157629076, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
