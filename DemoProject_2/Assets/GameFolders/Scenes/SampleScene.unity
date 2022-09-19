@@ -57027,10 +57027,82 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 905398811415384371, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 905398811415384371, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 144217007}
+    - target: {fileID: 905398811415384371, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InitializeWithBuilding
+      objectReference: {fileID: 0}
+    - target: {fileID: 905398811415384371, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DemoProject2.Buildings.GridBuildingSystem, DemoProject2.Scripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 905398811415384371, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 4852763733663579112, guid: 6b241def4418b93419077a1080c5761a, type: 3}
+    - target: {fileID: 905398811415384371, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6683270804973528806, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 144217007}
+    - target: {fileID: 7293193433102749982, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7293193433102749982, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 144217007}
+    - target: {fileID: 7293193433102749982, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InitializeWithBuilding
+      objectReference: {fileID: 0}
+    - target: {fileID: 7293193433102749982, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DemoProject2.Buildings.GridBuildingSystem, DemoProject2.Scripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 7293193433102749982, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 7383310384663365962, guid: de9dab5dbc344f141bfdbad3a20b1b8b, type: 3}
+    - target: {fileID: 7293193433102749982, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738640541996888113, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738640541996888113, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 144217007}
+    - target: {fileID: 8738640541996888113, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InitializeWithBuilding
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738640541996888113, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DemoProject2.Buildings.GridBuildingSystem, DemoProject2.Scripts
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738640541996888113, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8142923535274974908, guid: c25248cfab614344092b544d5ec6725a, type: 3}
+    - target: {fileID: 8738640541996888113, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
 --- !u!114 &1935888064 stripped
