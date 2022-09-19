@@ -26,13 +26,11 @@ namespace DemoProject2.Controllers
         {
             if (InputReader.LeftClick)
             {
-                //RaycastHit2D hit = Physics2D.Raycast(InputReader.ReadPositionFromLeftClick(), Vector2.zero);
                 RaycastHit2D hit = Physics2D.Raycast(_camera.ScreenToWorldPoint(Input.mousePosition), Vector2.zero,
                     Mathf.Infinity, _layerMask);
                 if (hit.collider == null)
                 {
-                    if (_player.StateMachine.CurrentState != _player.PlayerIdleState)
-                        _player.StateMachine.ChangeState(_player.PlayerIdleState);
+                    _player.StateMachine.ChangeState(_player.PlayerIdleState);
                     _unitController.ClearCommandList();
                 }
                 else
