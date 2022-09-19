@@ -11,6 +11,7 @@ namespace DemoProject2.StateMachines
 
         public SoldierState(StateMachine stateMachines, AIPath aiPath, SoldierController soldierController)
         {
+            _soldierController = soldierController;
             _stateMachine = stateMachines;
             _aiPath = aiPath;
         }

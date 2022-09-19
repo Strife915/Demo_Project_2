@@ -14,7 +14,7 @@ namespace DemoProject2.Controllers
         [SerializeField] Transform _target;
         [SerializeField] SpriteRenderer _sprite;
 
-        IMover _mover;
+        public IMover _mover { get; private set; }
         Camera _camera;
 
         public StateMachine SoldierStateMachine { get; private set; }

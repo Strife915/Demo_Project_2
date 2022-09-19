@@ -1,4 +1,5 @@
 ﻿using DemoProject2.Abstract.Mover;
+using DemoProject2.Controllers;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,8 +21,9 @@ namespace DemoProject2.Uis
         void Produce()
         {
             Debug.Log("clicked");
-            IMover soldier = Instantiate(_productionPrefab, _initialSpawnPos).GetComponent<IMover>();
-            soldier.SetTarget(_initialMovePos);
+            SoldierController soldier =
+                Instantiate(_productionPrefab, _initialSpawnPos).GetComponent<SoldierController>();
+            soldier._mover.SetTarget(_initialMovePos);
         }
 
         void GetReference()
