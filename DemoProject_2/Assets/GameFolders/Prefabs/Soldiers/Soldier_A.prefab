@@ -7,26 +7,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2523251256529645295, guid: 7ea39daf2e6fb0840814e2175bb8013c, type: 3}
-      propertyPath: gravity.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523251256529645295, guid: 7ea39daf2e6fb0840814e2175bb8013c, type: 3}
-      propertyPath: gravity.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523251256529645295, guid: 7ea39daf2e6fb0840814e2175bb8013c, type: 3}
-      propertyPath: gravity.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523251256529645295, guid: 7ea39daf2e6fb0840814e2175bb8013c, type: 3}
-      propertyPath: orientation
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523251256529645295, guid: 7ea39daf2e6fb0840814e2175bb8013c, type: 3}
-      propertyPath: enableRotation
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2653373495882767724, guid: 7ea39daf2e6fb0840814e2175bb8013c, type: 3}
       propertyPath: _stats
       value: 
@@ -80,12 +60,8 @@ PrefabInstance:
       value: Soldier_A
       objectReference: {fileID: 0}
     - target: {fileID: 7643365016738357810, guid: 7ea39daf2e6fb0840814e2175bb8013c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.42344764
-      objectReference: {fileID: 0}
-    - target: {fileID: 7643365016738357810, guid: 7ea39daf2e6fb0840814e2175bb8013c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.4804
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 8037899792567727383, guid: 7ea39daf2e6fb0840814e2175bb8013c, type: 3}
       propertyPath: m_Size.x
@@ -103,30 +79,5 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8200731738692204533, guid: 7ea39daf2e6fb0840814e2175bb8013c, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ea39daf2e6fb0840814e2175bb8013c, type: 3}
---- !u!1 &763626753642035384 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6553337429389616944, guid: 7ea39daf2e6fb0840814e2175bb8013c, type: 3}
-  m_PrefabInstance: {fileID: 5794676792209661832}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &7046441650485115297
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 763626753642035384}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5

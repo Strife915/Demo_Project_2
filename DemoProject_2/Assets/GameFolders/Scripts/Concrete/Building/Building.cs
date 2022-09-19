@@ -78,6 +78,7 @@ namespace DemoProject2.Buildings
             Placed = true;
 
             GridBuildingSystem.Instance.TakeArea(areaTemp);
+            AstarPath.active.Scan();
         }
 
 

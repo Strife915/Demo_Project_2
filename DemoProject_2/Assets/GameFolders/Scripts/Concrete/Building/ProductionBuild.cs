@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DemoProject2.ScriptableObjects;
+using UnityEngine;
 
 namespace DemoProject2.Buildings
 {
@@ -6,6 +7,9 @@ namespace DemoProject2.Buildings
     {
         [SerializeField] Canvas _canvas;
         [SerializeField] Transform _initialSpawnPos;
+        [SerializeField] ProduceBuildingDataContainerSO _buildingData;
+        [SerializeField] InformationActionSO _infoAction;
+
 
         public override void Awake()
         {
@@ -17,12 +21,14 @@ namespace DemoProject2.Buildings
         {
             base.OnClick();
             HandleFeedBackProductionTap(true);
+            _infoAction.HandleOnInformationOpen?.Invoke(_buildingData);
         }
 
         public override void OnRealse()
         {
             base.OnRealse();
             HandleFeedBackProductionTap(false);
+            _infoAction.HandleOnInformationClose?.Invoke();
         }
 
         public override void OnCommand()
