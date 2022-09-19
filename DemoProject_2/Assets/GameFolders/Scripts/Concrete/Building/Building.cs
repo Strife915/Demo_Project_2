@@ -1,7 +1,7 @@
 using DemoProject2.Abstract.Controlable;
 using UnityEngine;
 
-namespace DemoProject2.Building
+namespace DemoProject2.Buildings
 {
     public class Building : MonoBehaviour, IClickable
     {

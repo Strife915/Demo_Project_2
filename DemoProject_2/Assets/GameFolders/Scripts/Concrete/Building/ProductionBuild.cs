@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DemoProject2.Building
+namespace DemoProject2.Buildings
 {
     public class ProductionBuild : Building
     {

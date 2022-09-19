@@ -5,7 +5,7 @@ using DemoProject2.Enums;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-namespace DemoProject2.Building
+namespace DemoProject2.Buildings
 {
     public class GridBuildingSystem : SingletonMonoObject<GridBuildingSystem>
     {

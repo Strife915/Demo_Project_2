@@ -27399,7 +27399,7 @@ PrefabInstance:
       objectReference: {fileID: 856668914}
     - target: {fileID: 8041503509885042362, guid: 99ca2c88342062b4d85f3ace7c9983d9, type: 3}
       propertyPath: _layerMask.m_Bits
-      value: 64
+      value: 96
       objectReference: {fileID: 0}
     - target: {fileID: 8041503509885042362, guid: 99ca2c88342062b4d85f3ace7c9983d9, type: 3}
       propertyPath: _infiniteScrollOpenCloseUpdate
@@ -27477,7 +27477,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1305495715
-  m_SortingLayer: -2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.29000002, y: 0.060000002, z: 0}
