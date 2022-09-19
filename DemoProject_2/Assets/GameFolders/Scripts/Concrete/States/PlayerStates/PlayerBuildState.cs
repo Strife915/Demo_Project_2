@@ -1,5 +1,4 @@
-﻿using DemoProject2.Uis;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Tilemaps;
 
 namespace DemoProject2.StateMachines
@@ -8,14 +7,14 @@ namespace DemoProject2.StateMachines
     {
         Tilemap _mainTileMap;
         TilemapRenderer _tilemapRenderer;
-        InfiniteScrollOpenCloseUpdate _infiniteScrollOpenCloseUpdate;
+        GameObject _productionPanel;
 
-        public PlayerBuildState(StateMachine stateMachine, Tilemap mainTileMap,
-            InfiniteScrollOpenCloseUpdate infiniteScrollOpenCloseUpdate) : base(stateMachine)
+        public PlayerBuildState(StateMachine stateMachine, Tilemap mainTileMap, GameObject productionPanel) : base(
+            stateMachine)
         {
             _mainTileMap = mainTileMap;
             _tilemapRenderer = mainTileMap.GetComponent<TilemapRenderer>();
-            _infiniteScrollOpenCloseUpdate = infiniteScrollOpenCloseUpdate;
+            _productionPanel = productionPanel;
         }
 
         public override void Enter()
@@ -23,14 +22,14 @@ namespace DemoProject2.StateMachines
             base.Enter();
             Debug.Log("Player Enter Build State");
             TileMapRendererUpdate(true);
-            _infiniteScrollOpenCloseUpdate.OpenCloseUpdate(false);
+            _productionPanel.SetActive(false);
         }
 
         public override void Exit()
         {
             base.Exit();
             TileMapRendererUpdate(false);
-            _infiniteScrollOpenCloseUpdate.OpenCloseUpdate(true);
+            _productionPanel.SetActive(true);
         }
 
         void TileMapRendererUpdate(bool value)

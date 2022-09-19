@@ -9,7 +9,7 @@ namespace DemoProject2.Controllers
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] Tilemap _mainTileMap;
-        [SerializeField] InfiniteScrollOpenCloseUpdate _infiniteScrollOpenCloseUpdate;
+        [SerializeField] GameObject _productionMenu;
         [SerializeField] LayerMask _layerMask;
         public ICursorController CursorController { get; private set; }
         public StateMachine StateMachine { get; private set; }
@@ -23,7 +23,7 @@ namespace DemoProject2.Controllers
             StateMachine = new StateMachine();
             CursorController = new CursorController(this);
             PlayerIdleState = new PlayerIdleState(StateMachine, this);
-            PlayerBuildState = new PlayerBuildState(StateMachine, _mainTileMap, _infiniteScrollOpenCloseUpdate);
+            PlayerBuildState = new PlayerBuildState(StateMachine, _mainTileMap, _productionMenu);
             PlayerCommandState = new PlayerCommandState(StateMachine, this);
         }
 
