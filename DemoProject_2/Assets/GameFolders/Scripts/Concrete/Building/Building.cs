@@ -7,6 +7,7 @@ namespace DemoProject2.Building
     {
         [SerializeField] SpriteRenderer _spriteRenderer;
         [SerializeField] Transform _initialSpawnPos;
+        [SerializeField] Canvas _canvas;
         Vector3 _startPos;
         float _deltaX, _deltaY;
         Camera _camera;
@@ -19,6 +20,7 @@ namespace DemoProject2.Building
         void Awake()
         {
             _camera = Camera.main;
+            _canvas = _canvas.GetComponent<Canvas>();
         }
 
         void OnMouseDown()
@@ -85,16 +87,18 @@ namespace DemoProject2.Building
         {
             Debug.Log("clicked");
             _selecSprite.enabled = true;
+            _canvas.enabled = true;
         }
 
         public void OnCommand()
         {
-            Debug.Log("got command");
+            _initialSpawnPos.position = _camera.ScreenToWorldPoint(Input.mousePosition);
         }
 
         public void OnRealse()
         {
             _selecSprite.enabled = false;
+            _canvas.enabled = false;
             Debug.Log("realesed");
         }
     }

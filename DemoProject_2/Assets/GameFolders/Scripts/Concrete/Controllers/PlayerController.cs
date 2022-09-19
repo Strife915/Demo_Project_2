@@ -36,9 +36,5 @@ namespace DemoProject2.Controllers
         {
             StateMachine.CurrentState.Tick();
         }
-
-        void FixedUpdate()
-        {
-        }
     }
 }
