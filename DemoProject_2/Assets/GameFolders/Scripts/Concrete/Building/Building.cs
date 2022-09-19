@@ -6,21 +6,19 @@ namespace DemoProject2.Building
     public class Building : MonoBehaviour, IClickable
     {
         [SerializeField] SpriteRenderer _spriteRenderer;
-        [SerializeField] Transform _initialSpawnPos;
-        [SerializeField] Canvas _canvas;
+
         Vector3 _startPos;
         float _deltaX, _deltaY;
-        Camera _camera;
+        protected Camera _camera;
 
         public bool Placed { get; private set; }
         public SpriteRenderer _selecSprite => _spriteRenderer;
         public BoundsInt area;
 
 
-        void Awake()
+        public virtual void Awake()
         {
             _camera = Camera.main;
-            _canvas = _canvas.GetComponent<Canvas>();
         }
 
         void OnMouseDown()
@@ -83,23 +81,23 @@ namespace DemoProject2.Building
         }
 
 
-        public void OnClick()
+        public virtual void OnClick()
         {
-            Debug.Log("clicked");
-            _selecSprite.enabled = true;
-            _canvas.enabled = true;
+            HandleFeedBackOnclick(true);
         }
 
-        public void OnCommand()
+        public virtual void OnCommand()
         {
-            _initialSpawnPos.position = _camera.ScreenToWorldPoint(Input.mousePosition);
         }
 
-        public void OnRealse()
+        public virtual void OnRealse()
         {
-            _selecSprite.enabled = false;
-            _canvas.enabled = false;
-            Debug.Log("realesed");
+            HandleFeedBackOnclick(false);
+        }
+
+        protected void HandleFeedBackOnclick(bool value)
+        {
+            _selecSprite.enabled = value;
         }
     }
 }
