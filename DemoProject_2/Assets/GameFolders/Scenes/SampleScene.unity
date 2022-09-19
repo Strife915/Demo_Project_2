@@ -27381,6 +27381,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1024367348 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114655391037842748, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+  m_PrefabInstance: {fileID: 1935888063}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d95e63f0ed24b341a69a4d29530180b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1256617087
 GameObject:
   m_ObjectHideFlags: 0
@@ -56942,6 +56953,26 @@ PrefabInstance:
     - target: {fileID: 1372980295482016, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
       propertyPath: m_Name
       value: VerticalScroll
+      objectReference: {fileID: 0}
+    - target: {fileID: 114655391037842748, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: _vertical
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114655391037842748, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: _itemSpacing
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114655391037842748, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: _verticalMargin
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114948524785464904, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: _scrollContent
+      value: 
+      objectReference: {fileID: 1024367348}
+    - target: {fileID: 114948524785464904, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
+      propertyPath: _outOfBoundsThreshold
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 224707700107698622, guid: 30cbc0fae6a2fc84ab84f49a22e06c99, type: 3}
       propertyPath: m_Pivot.x
