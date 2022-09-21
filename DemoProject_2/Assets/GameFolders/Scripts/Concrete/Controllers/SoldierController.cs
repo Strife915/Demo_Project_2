@@ -13,7 +13,7 @@ namespace DemoProject2.Controllers
         [SerializeField] Transform _target;
         [SerializeField] SpriteRenderer _sprite;
 
-        public IMover _mover { get; private set; }
+        IMover _mover;
         Camera _camera;
         AIPath _aiPath;
         AIDestinationSetter _aiDestinationSetter;

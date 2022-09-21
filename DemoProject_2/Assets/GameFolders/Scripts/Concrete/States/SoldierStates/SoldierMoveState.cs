@@ -14,7 +14,6 @@ namespace DemoProject2.StateMachines
         public override void Enter()
         {
             base.Enter();
-            Debug.Log("soldier move");
         }
 
         public override void Tick()

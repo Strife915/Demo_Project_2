@@ -15,7 +15,6 @@ namespace DemoProject2.StateMachines
 
         public override void Enter()
         {
-            Debug.Log("Player Enter Command State");
         }
 
         public override void Tick()

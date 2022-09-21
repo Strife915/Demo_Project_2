@@ -20,7 +20,6 @@ namespace DemoProject2.StateMachines
         public override void Enter()
         {
             base.Enter();
-            Debug.Log("Player Enter Build State");
             TileMapRendererUpdate(true);
             _productionPanel.SetActive(false);
         }

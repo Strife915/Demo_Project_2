@@ -16,7 +16,6 @@ namespace DemoProject2.StateMachines
         public override void Enter()
         {
             base.Enter();
-            Debug.Log("Player Enter Idle State");
         }
 
         public override void Tick()
