@@ -79,6 +79,7 @@ namespace DemoProject2.Buildings
             Placed = true;
 
             GridBuildingSystem.Instance.TakeArea(areaTemp);
+            gameObject.layer = 6;
             AstarPath.active.Scan();
         }
 

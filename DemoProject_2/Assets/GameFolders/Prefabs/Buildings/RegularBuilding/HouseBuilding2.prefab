@@ -71,6 +71,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: HouseBuilding2
       objectReference: {fileID: 0}
+    - target: {fileID: 8579848280849653146, guid: ad452c45e153d3e4aa83c58b96d98af6, type: 3}
+      propertyPath: m_Size.x
+      value: 2.1553402
+      objectReference: {fileID: 0}
+    - target: {fileID: 8579848280849653146, guid: ad452c45e153d3e4aa83c58b96d98af6, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.046213627
+      objectReference: {fileID: 0}
     - target: {fileID: 8992907395778773633, guid: ad452c45e153d3e4aa83c58b96d98af6, type: 3}
       propertyPath: m_RootOrder
       value: 0

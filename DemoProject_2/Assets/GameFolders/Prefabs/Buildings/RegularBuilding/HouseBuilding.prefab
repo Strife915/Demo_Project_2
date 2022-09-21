@@ -79,6 +79,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: HouseBuilding
       objectReference: {fileID: 0}
+    - target: {fileID: 8579848280849653146, guid: ad452c45e153d3e4aa83c58b96d98af6, type: 3}
+      propertyPath: m_Size.x
+      value: 2.0597944
+      objectReference: {fileID: 0}
+    - target: {fileID: 8579848280849653146, guid: ad452c45e153d3e4aa83c58b96d98af6, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8233675
+      objectReference: {fileID: 0}
+    - target: {fileID: 8579848280849653146, guid: ad452c45e153d3e4aa83c58b96d98af6, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.07569957
+      objectReference: {fileID: 0}
+    - target: {fileID: 8579848280849653146, guid: ad452c45e153d3e4aa83c58b96d98af6, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.16401583
+      objectReference: {fileID: 0}
     - target: {fileID: 8992907395778773633, guid: ad452c45e153d3e4aa83c58b96d98af6, type: 3}
       propertyPath: m_RootOrder
       value: 0
