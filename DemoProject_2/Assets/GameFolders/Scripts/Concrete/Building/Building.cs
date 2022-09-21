@@ -23,6 +23,7 @@ namespace DemoProject2.Buildings
 
         void OnMouseDown()
         {
+            Debug.Log("click");
             if (!Placed)
             {
                 _startPos = Input.mousePosition;

@@ -11,6 +11,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BarrackPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 2825122300665020396, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
+      propertyPath: m_Size.y
+      value: 3.7407057
+      objectReference: {fileID: 0}
+    - target: {fileID: 2825122300665020396, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.9701589
+      objectReference: {fileID: 0}
+    - target: {fileID: 2825122300665020396, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4045430983433414683, guid: c461452cc581eaa4fbf7ed425b8dc553, type: 3}
       propertyPath: m_Sprite
       value: 
