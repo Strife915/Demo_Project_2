@@ -20,10 +20,6 @@ namespace DemoProject2.Controllers
             _aiPath.maxSpeed = stats.MoveSpeed;
         }
 
-        public void Move()
-        {
-            _aiPath.canMove = true;
-        }
 
         public void SetTarget(Transform transform)
         {

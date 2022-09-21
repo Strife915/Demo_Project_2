@@ -6,6 +6,7 @@ namespace DemoProject2.StateMachines
 
         public virtual void Enter()
         {
+            DoChecks();
         }
 
         public virtual void Exit()

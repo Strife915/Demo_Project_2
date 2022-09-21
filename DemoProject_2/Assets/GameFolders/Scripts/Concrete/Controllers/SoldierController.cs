@@ -15,6 +15,9 @@ namespace DemoProject2.Controllers
 
         public IMover _mover { get; private set; }
         Camera _camera;
+        AIPath _aiPath;
+        AIDestinationSetter _aiDestinationSetter;
+        bool _targetSet;
 
         public StateMachine SoldierStateMachine { get; private set; }
         public SoldierIdleState SoldierIdleState { get; private set; }
@@ -23,15 +26,18 @@ namespace DemoProject2.Controllers
 
         void Awake()
         {
+            _aiPath = GetComponent<AIPath>();
+            _aiDestinationSetter = GetComponent<AIDestinationSetter>();
             SoldierStateMachine = new StateMachine();
-            SoldierIdleState = new SoldierIdleState(SoldierStateMachine, GetComponent<AIPath>(), this);
-            SoldierMoveState = new SoldierMoveState(SoldierStateMachine, GetComponent<AIPath>(), this);
-            _mover = new MoveWithAstar(GetComponent<AIDestinationSetter>(), GetComponent<AIPath>(), _target, _stats);
+            SoldierIdleState = new SoldierIdleState(SoldierStateMachine, _aiPath, this);
+            SoldierMoveState = new SoldierMoveState(SoldierStateMachine, _aiPath, this);
+            _mover = new MoveWithAstar(_aiDestinationSetter, _aiPath, _target, _stats);
             _camera = Camera.main;
         }
 
         void Start()
         {
+            _target.transform.parent = null;
             SoldierStateMachine.InıtializeState(SoldierIdleState);
         }
 
@@ -48,8 +54,9 @@ namespace DemoProject2.Controllers
 
         public void OnCommand()
         {
+            if (!_aiPath.enabled)
+                _aiPath.enabled = true;
             _target.position = _camera.ScreenToWorldPoint(Input.mousePosition);
-            _target.transform.parent = null;
             _mover.SetTarget(_target);
         }
 
@@ -61,6 +68,11 @@ namespace DemoProject2.Controllers
         void UpdateSelectFeedBack(bool value)
         {
             _selecSprite.enabled = value;
+        }
+
+        public void GetInitialPositionFromBuilding(Transform buildingInitialSpawnPos)
+        {
+            _target.position = buildingInitialSpawnPos.position;
         }
     }
 }

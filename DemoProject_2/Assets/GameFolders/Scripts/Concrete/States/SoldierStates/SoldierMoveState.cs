@@ -1,5 +1,6 @@
 ﻿using DemoProject2.Controllers;
 using Pathfinding;
+using UnityEngine;
 
 namespace DemoProject2.StateMachines
 {
@@ -8,6 +9,12 @@ namespace DemoProject2.StateMachines
         public SoldierMoveState(StateMachine stateMachines, AIPath aiPath, SoldierController soldierController) : base(
             stateMachines, aiPath, soldierController)
         {
+        }
+
+        public override void Enter()
+        {
+            base.Enter();
+            Debug.Log("soldier move");
         }
 
         public override void Tick()

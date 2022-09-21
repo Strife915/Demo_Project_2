@@ -133,4 +133,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _inputLayerMask:
     serializedVersion: 2
-    m_Bits: 320
+    m_Bits: 2304

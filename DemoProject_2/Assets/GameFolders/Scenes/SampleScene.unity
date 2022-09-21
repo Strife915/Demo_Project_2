@@ -968,10 +968,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1279040253}
     m_Modifications:
-    - target: {fileID: 82705934, guid: 465ee24cefa45634cad406e0c221e77d, type: 3}
-      propertyPath: _inputLayerMask.m_Bits
-      value: 2304
-      objectReference: {fileID: 0}
     - target: {fileID: 6753001925162314297, guid: 465ee24cefa45634cad406e0c221e77d, type: 3}
       propertyPath: m_Name
       value: Main Camera

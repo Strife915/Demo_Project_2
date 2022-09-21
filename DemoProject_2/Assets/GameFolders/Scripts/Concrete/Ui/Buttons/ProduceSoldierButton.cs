@@ -23,7 +23,7 @@ namespace DemoProject2.Uis
             SoldierController soldier =
                 Instantiate(_productionPrefab, _initialSpawnPos).GetComponent<SoldierController>();
             soldier.transform.parent = null;
-            soldier._mover.SetTarget(_initialMovePos);
+            soldier.GetInitialPositionFromBuilding(_initialMovePos);
         }
 
         void GetReference()
